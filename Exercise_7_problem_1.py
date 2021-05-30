@@ -21,10 +21,8 @@ from matplotlib import pyplot as plt
 from matplotlib import cm
 # YOUR CODE HERE 1 to set data
 data=pd.DataFrame(np.random.rand ( 2000 ) .reshape ( 1000,2 ) , columns =['x','y'])
-# Check your random values
 print(data.head())
 
-# Check that you have the correct number of rows
 assert len(data) == 1000, "There should be 1000 rows of data."
 
 
@@ -60,21 +58,16 @@ plt.scatter (
  edgecolor="black"
  ) 
 plt.colorbar()
-# im.set_title ( " My random candy points " ) 
-# plt.show
-# Add labels and title
 # YOUR CODE HERE 4
 plt.title("My random candy points")
 plt.xlabel("X-label")
 plt.ylabel("Ylabel")
-# Save the plot as a png file :
+plt.show()
 outputfp="my_first_plot.png " 
-# Save the plot as a png file:
 outputfp= "my_first_plot.png"
 
 # YOUR CODE HERE 5
 plt.savefig(outputfp)
- # It print statement should print the output filename of yours
 print ("Saved my first plotas : " , outputfp ) 
 
 
