@@ -64,10 +64,9 @@ ax = selection['TEMP_C'].plot(
   ylabel='Temperature(Celsius)'
 )
 plt.grid()
-# Set output file name
+plt.show()
 outputfp = ""
 
-# Save plot as image
 # YOUR CODE HERE 4
 outputfp="temp_line_plot.png"
 plt.savefig(outputfp)
@@ -75,8 +74,6 @@ import os
 
 #Check that output file exists (also open the file and check that the plot looks ok!)
 os.path.exists(outputfp)
-
-
 # **REMINDER**: Don't forget to upload your figure and the modified notebook into your personal GitHub repository!
 # 
 # ### Done!
